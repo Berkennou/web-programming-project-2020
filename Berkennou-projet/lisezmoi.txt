@@ -1,0 +1,509 @@
+
+-J'ai choisis un théme qui consiste trois planétes du systéme solaire et qi sont proche de notre planéte terre.
+
+
+
+
+-Les régles communes  ou bien on peut dire plus au moins  la feuille de style(la même) des trois document vénus,mars,jupiter:
+
+header{ 
+    background-size: 100%;
+    background-position-y: -100px;
+    padding:15px;
+    width:98%;
+    border:gray solid 5px;
+    margin:auto;
+   
+}
+header h1{
+  height:100%;
+
+  color:white;
+  font-style:italic;
+  font-size: 700%;
+  text-align: center;
+}
+
+
+body>table th{
+  border:5px solid black;
+  font-size: 210%;
+  background-color: gray;
+  padding:10px;
+}
+body>table{
+  margin:auto;
+  padding-top:10px;
+}
+img{
+  width:550px;
+  float:right;
+  padding:7px;
+  margin:10px;
+  margin-right:100px;
+  border:lightgray solid 3px;
+  background-color: gray;
+}
+img[alt$="lle"]{
+  width:700px;
+}
+
+article table td, article table th{
+  border:black 2px solid;
+  padding:7px;
+}
+article table td{
+  background-color: lightgray;
+}
+article table th{
+  background-color: gray;
+}
+caption{
+  font-style: italic;
+  font-size: 120%;
+  font-weight:bold;
+}
+section h1{
+  font-style:oblique;
+  font-size: 240%;
+  border: 5px solid lightgray;
+  background-color:gray;
+  text-align: center;
+  padding:5px;
+}
+article p{
+  font-size:140%;
+  padding:20px;
+}
+article{
+  border:solid 5px gray;
+  margin:5px 10px 10px 5px;
+  padding:15px;
+  background-color: #dcdcdc
+}
+footer{
+  margin-top:40px;
+  padding:50px;
+  background-color: black;
+  font-size: 150%;
+  color:white;
+  width:94%;
+}
+
+body>table th:hover{
+  background-color: lightgoldenrodyellow;
+  transform: scale(1.05);
+}
+
+article.presentation img{
+  float:none;
+}
+body>table a{
+  color:black;
+}
+section table{
+  font-size: 110%
+}
+section ul{
+  font-size: 110%;
+}
+p::first-letter{
+  font-weight: bold;
+}
+
+figcaption{
+  font-weight: bold;
+  font-size: 20px;
+  margin-left:850px;
+}
+figure.un figcaption{
+  margin-left: 500px;
+}
+table caption{
+  padding:10px;
+}
+figure.un img{
+  margin-left:370px;
+}
+@media screen and (max-width:800px){
+  body>table{
+    display:none;  
+  }
+  img{
+    float:none;
+    width:300px;
+    margin-right:100%;
+    margin-left:2px;
+  }
+  img[alt$="lle"]{
+  width:400px;
+}
+    figure.un img{
+    margin-left:20px;
+  }
+    figcaption{
+  font-weight: bold;
+  font-size: 20px;
+  margin-left:10px;
+}
+figure.un figcaption{
+  margin-left:25px;
+}
+  
+}
+@media print{
+  body>table{
+    display:none;
+  }
+  section{
+    margin:0px;
+    width:100%;
+  }
+  article p{
+    font-size: 20px;
+    font-family:sans-serif;
+  }
+  footer{
+    display:none;
+  }
+  img{
+    float:none;
+    width:200px;
+  }
+    img[alt$="lle"]{
+  width:400px;
+}
+  figure.un img{
+    margin-left:20px;
+  }
+  figcaption{
+  font-weight: bold;
+  font-size: 20px;
+  margin-left:10px;
+}
+figure.un figcaption{
+  margin-left:25px;
+}
+}
+
+
+
+-Les régles communes entre la page sommaire et les trois documents venus,mars,jupiter:
+
+article p,article ul {
+  color:white;
+  font-size:30px;
+}
+
+@media screen and (max-width:600px){
+    
+  article{
+    margin:0px;
+    width:100%;
+  }
+  article p{
+    font-size: 20px;
+    margin:10px;
+  }
+  article ul,article h1{
+    margin:10px;
+  }
+}
+
+
+@media print{
+  article{
+    margin:0px;
+    width:100%;
+  }
+  article p{
+    font-size: 20px;
+    margin:10px;
+  }
+  article ul,article h1{
+    margin:10px;
+  }
+  header{
+    display:none;
+  }
+}
+-Les media-queries utilisées pour la page sommaire:
+
+@media screen and (max-width:600px){
+  nav{
+    display:none;  
+  }
+  div.planete{
+    display:block;
+  }
+    
+  article{
+    margin:0px;
+    width:100%;
+  }
+  div#tout{
+    margin:0px; 
+  }
+  article p{
+    font-size: 20px;
+    margin:10px;
+  }
+  article ul,article h1{
+    margin:10px;
+  }
+}
+@media print{
+  nav{
+    display:none;
+  }
+  article{
+    margin:0px;
+    width:100%;
+  }
+  div#tout{
+    margin:0px; 
+  }
+  article p{
+    font-size: 20px;
+    margin:10px;
+  }
+  article ul,article h1{
+    margin:10px;
+  }
+  header{
+    display:none;
+  }
+}
+
+-Les média-queries des trois pages présentant les planétes:
+
+@media screen and (max-width:800px){
+  body>table{
+    display:none;  
+  }
+  img{
+    float:none;
+    width:300px;
+    margin-right:100%;
+    margin-left:2px;
+  }
+  img[alt$="lle"]{
+  width:400px;
+}
+    figure.un img{
+    margin-left:20px;
+  }
+    figcaption{
+  font-weight: bold;
+  font-size: 20px;
+  margin-left:10px;
+}
+figure.un figcaption{
+  margin-left:25px;
+}
+  
+}
+@media print{
+  body>table{
+    display:none;
+  }
+  section{
+    margin:0px;
+    width:100%;
+  }
+  article p{
+    font-size: 20px;
+    font-family:sans-serif;
+  }
+  footer{
+    display:none;
+  }
+  img{
+    float:none;
+    width:200px;
+  }
+    img[alt$="lle"]{
+  width:400px;
+}
+  figure.un img{
+    margin-left:20px;
+  }
+  figcaption{
+  font-weight: bold;
+  font-size: 20px;
+  margin-left:10px;
+}
+figure.un figcaption{
+  margin-left:25px;
+}
+}
+
+-J'ai fais exprés de réaliser une page sommaire attirante, car c'est une page d'introduction et de présentation qui consiste à pousser l'utilisateur pour s'interesser au site et le mettre à l'aise dans ce dernier.
+et comme les trois pages qui présente des planétes je les ai réalisé pour un aspect informatif qui met l'utilisateur dans une situation de concentration pour aquérir les informations que portent ces pages .
+Donc j'ai éviter de mettre beaucoup de décoration et j'ai choisis de mettre une décoration plûtot simple mais j'ai choisis des bordures et des couleurs qui permetent d'encadrer toutes les rubrique de ces pages et les mettre en évidence .
+
+-Quelques régles complexe utilisé:
+
+ body>table th:la régles qui permet de sélectionner les colonnes titre du tableau fils de body et qui est considéré comme menu .
+ 
+img[alt$="lle"]: sélectionne les mage dont l'attribut alt finit par "ile".
+ 
+body>table th:hover{
+  background-color: lightgoldenrodyellow; 
+  transform: scale(1.05);
+}
+ :la régle qui permet de sélectionner les colonnes titre du tableau fils de body et qui est considéré comme menu et le faire bouger vers l'utilisateur quand on met la souris sur cet élement ainsi que le changement de la couleur du background et ça pour mettre en évidence le menu donc les différentes rubriques de la page.
+
+p::first-letter{
+  font-weight: bold;
+}
+:pour mettre en évidence et donner un aspect de lecture pour chaque paragraphe .
+
+
+-Expliquation des media-queries utilisées:
+  -pour le media screen:
+@media screen and (max-width:800px){
+  body>table{
+    display:none;  
+  }
+  img{
+    float:none;
+    width:300px;
+    margin-right:100%;
+    margin-left:2px;
+  }
+  img[alt$="lle"]{
+  width:400px;
+}
+    figure.un img{
+    margin-left:20px;
+  }
+    figcaption{
+  font-weight: bold;
+  font-size: 20px;
+  margin-left:10px;
+}
+figure.un figcaption{
+  margin-left:25px;
+}
+ 
+Pour un écran inférieure à 800px j'ai décdidé d'annuler l'affichage du tableau menu car il prendra de la place et il sera pas aussi organisé à le consulter , j'ai annulé les images flottantes et j'ai diminué leurs taille pour que ça soit visible et dans le milieux de l'affichage pour adapter la facilité de leurs consultation ainsi que j'ai modifié les emplacments des captions pour ces images pour qu'elles soient vraiment au center du haut de la photoet tout sera agréable à consulter.
+
+
+  -pour le media print:
+
+
+@media print{
+  body>table{
+    display:none;
+  }
+  section{
+    margin:0px;
+    width:100%;
+  }
+  article p{
+    font-size: 20px;
+    font-family:sans-serif;
+  }
+  footer{
+    display:none;
+  }
+  img{
+    float:none;
+    width:200px;
+  }
+    img[alt$="lle"]{
+  width:400px;
+}
+  figure.un img{
+    margin-left:20px;
+  }
+  figcaption{
+  font-weight: bold;
+  font-size: 20px;
+  margin-left:10px;
+}
+figure.un figcaption{
+  margin-left:25px;
+}
+}
+
+Pour l'impression j'ai annulé l'affichage du menu et le footer car on en a plus besoin sur des feuilles, et aussi j'ai annulé les marges du contenu de la page pour qu'elle occupe toute la feuille imprimé.
+J'ai diminué la taille de l'ecriture dans les paragraphes et aussi leurs famille  pour une famille sans-serif qui est une famille adapté pour l'impression.J'ai annulé les images flottantes et j'ai diminuer leurs taille et je les ai positionnées au milieux de la feuille imprimé ainsi que leurs légendes pour que la feuille imprimé soit bien lisible et organisé .
+
+
+
+en dehors des media-queries j'ai réaliser les liens vers les trois pages à partir du sommaire de sorte qu'il s'ouvre dans la même pages(onglet) car dans les pages il y a un lien retour.  Mais j'ai utilisé l'attribut target="_blank" quand on revient d'un page au sommaire le sommaire s'ouvre dans une nouvlle onglet et ça pour garder l'onglet ou l'utilisateur a été.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

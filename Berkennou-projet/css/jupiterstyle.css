@@ -1,0 +1,177 @@
+header{
+    background-image: url("../images/header_jupiter.jpg"); 
+    background-size: 100%;
+    background-position-y: -100px;
+    padding:15px;
+    width:98%;
+    border:gray solid 5px;
+    margin:auto;
+   
+}
+header h1{
+  height:100%;
+  color:white;
+  font-style:italic;
+  font-size: 700%;
+  text-align: center;
+}
+
+
+body>table th{
+  border:5px solid black;
+  font-size: 210%;
+  background-color: gray;
+  padding:10px;
+}
+body>table{
+  margin:auto;
+  padding-top:10px;
+}
+img{
+  width:400px;
+  float:right;
+  padding:7px;
+  margin:10px;
+  margin-right:100px;
+  border:lightgray solid 3px;
+  background-color: gray;
+}
+img[alt$="lle"]{
+  width:550px;
+}
+
+article table td, article table th{
+  border:black 2px solid;
+  padding:7px;
+}
+article table td{
+  background-color: lightgray;
+}
+article table th{
+  background-color: gray;
+}
+caption{
+  font-style: italic;
+  font-size: 120%;
+  font-weight:bold;
+}
+section h1{
+  font-style:oblique;
+  font-size: 240%;
+  border: 5px solid lightgray;
+  background-color:gray;
+  text-align: center;
+  padding:5px;
+}
+article p{
+  font-size:140%;
+  padding:20px;
+}
+article{
+  border:solid 5px gray;
+  margin:5px 10px 10px 5px;
+  padding:15px;
+  background-color: #dcdcdc
+}
+footer{
+  margin-top:40px;
+  padding:50px;
+  background-color: black;
+  font-size: 150%;
+  color:white;
+  width:94%;
+}
+
+body>table th:hover{
+  background-color: lightgoldenrodyellow;
+  transform: scale(1.05);
+}
+
+article.presentation img{
+  float:none;
+}
+body>table a{
+  color:black;
+}
+section table{
+  font-size: 110%
+}
+section ul{
+  font-size: 110%;
+}
+p::first-letter{
+  font-weight: bold;
+}
+figcaption{
+  font-weight: bold;
+  font-size: 20px;
+  margin-left:920px;
+}
+figure.un figcaption{
+  margin-left:550px;
+}
+table caption{
+  padding:10px;
+}
+figure.un img{
+  margin-left: 500px;
+}
+@media screen and (max-width:800px){
+  body>table{
+    display:none;  
+  }
+  img{
+    float:none;
+    width:300px;
+    margin-right:100%;
+    margin-left:2px;
+  }
+  img[alt$="lle"]{
+  width:400px;
+}
+    figure.un img{
+    margin-left:20px;
+  }
+    figcaption{
+  font-weight: bold;
+  font-size: 20px;
+  margin-left:10px;
+}
+figure.un figcaption{
+  margin-left:25px;
+}
+}
+@media print{
+  body>table{
+    display:none;
+  }
+  section{
+    margin:0px;
+    width:100%;
+  }
+  article p{
+    font-size: 20px;
+    font-family:sans-serif;
+  }
+  footer{
+    display:none;
+  }
+  img{
+    float:none;
+    width:200px;
+  }
+    img[alt$="lle"]{
+  width:400px;
+}
+  figure.un img{
+    margin-left:20px;
+  }
+  figcaption{
+  font-weight: bold;
+  font-size: 20px;
+  margin-left:10px;
+}
+figure.un figcaption{
+  margin-left:25px;
+}
+}
